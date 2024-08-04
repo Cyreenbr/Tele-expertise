@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+}
+
+
+.navbar-brand.brand {
+    /*font-family: 'Playfair Display', serif; */
+    font-size: large;
+    font-weight: bold; 
+    color: #ec8414; 
+}
+  
+.navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+  
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+  
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+  
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link-active {
+    border-bottom: 2px solid #ec8414;
+}
+
+.nav-link hr {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    border: none; /* Remove default border */
+    border-top: 3px solid orange; /* Custom border style and color */
+    width: 100%; /* Ensure the hr is full width */
+    background-color: #ec8414;
+}
+
+.navbar-nav .dropdown-toggle hr.dropdown-underline {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-top: 2px solid orange;
+    width: 100%;
+}
+
+  

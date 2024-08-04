@@ -1,0 +1,38 @@
+/* Ensure the carousel images are responsive */
+.carousel-item img {
+    max-height: 600px; /* Set a maximum height for the images */
+    width: 100%; /* Ensure the images take up the full width of the carousel */
+    object-fit: cover; /* Cover the container without distorting the aspect ratio */
+    
+  }
+  
+  /* Style for carousel captions */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Rounded corners for a smoother look */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      font-size: 14px; /* Smaller font size on smaller screens */
+      padding: 5px; /* Less padding on smaller screens */
+    }
+  
+    .carousel-item img {
+      max-height: 300px; /* Smaller max height for images on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-caption {
+      font-size: 12px; /* Even smaller font size on very small screens */
+      padding: 3px; /* Less padding on very small screens */
+    }
+  
+    .carousel-item img {
+      max-height: 200px; /* Smaller max height for images on very small screens */
+    }
+  }
+  

@@ -1,0 +1,82 @@
+/* Style for the container */
+
+.login-container {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    border: 1px solid grey;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  /* Style for the form */
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the input fields */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #ffcc66; /* changed background color to yellow */
+    color: black; /* changed text color to black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ffd700; /* lighter shade of yellow on hover */
+  }
+  
+  /* Style for the h3 heading */
+  h3 {
+    margin-top: 0;
+  }
+  
+  /* Hide the register form by default */
+  .register-form {
+    display: none;
+  }
+  
+  /* Show the register form when active */
+  .show-register .register-form {
+    display: block;
+  }
+  
+  /* Hide the login form by default */
+  .login-form {
+    display: block;
+  }
+  
+  /* Show the login form when active */
+  .show-login .login-form {
+    display: block;
+  }
+  
+  /* Hide the login form when active */
+  .hide-login .login-form {
+    display: none;
+  }
+  
+  /* Style for the forms */
+  .login-form, .register-form {
+    background-color: rgba(0, 0, 0, 0.221); /* Background color black */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .login-container {
+      max-width: 90%;
+    }
+  }

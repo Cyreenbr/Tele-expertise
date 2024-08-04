@@ -1,0 +1,133 @@
+
+.about-us-section {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start to bring them closer */
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background-color: #f9f9f9; /* Optional background color */
+    position: relative; /* Relative positioning for absolute elements */
+}
+
+.image-container {
+    position: relative; /* Relative positioning for absolute elements */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Reduced margin to bring the text closer */
+}
+
+.profile-image {
+    width: 300px; /* Fixed width for a perfect circle */
+    height: 300px; /* Fixed height to match the width */
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional box shadow for better visual */
+}
+
+.graphic-element {
+    position: absolute;
+    top: -30px; /* Adjusted position to move the circle higher */
+    left: 70%; /* Adjusted position */
+    transform: translate(-50%, 50%); /* Centering the graphic element */
+    width: 250px; /* Slightly larger than the profile image */
+    height: 250px; /* Matching height to ensure it's a circle */
+    background-color: orange; /* Or use an actual image or SVG */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.text-container {
+    width: 55%; /* Increased width to take up the remaining space */
+    padding: 20px; /* Add padding for better text spacing */
+}
+
+.text-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.text-container p {
+    font-size: 1.2em; /* Slightly increased font size for readability */
+    color: #666;
+    line-height: 1.6; /* Improved line-height for better readability */
+    margin-bottom: 20px; /* Added margin for spacing */
+    font-family: 'Poppins', sans-serif; /* Font family set to Poppins */
+}
+
+.about-us-section .text-container .learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px; /* Adjusted margin to move the button down */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.about-us-section .text-container .learn-more-btn:hover {
+    background-color: orange;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-container {
+        width: 80%; /* Full width for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        width: 150px; /* Smaller width for responsive design */
+        height: 150px; /* Adjusted height to match width */
+    }
+
+    .graphic-element {
+        width: 150px; /* Slightly larger than the profile image */
+        height: 150px; /* Matching height to ensure it's a circle */
+        bottom: -10px; /* Adjusted position for smaller screens */
+        left: 65%; /* Adjusted position for smaller screens */
+        transform: translate(-50%, 50%); /* Centering the graphic element */
+    }
+
+    .text-container {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .about-us-section .text-container h2::after {
+        width: 100%; /* Full width for smaller screens */
+        bottom: -20px; /* Adjusted position for smaller screens */
+        left: 0; /* Align it to the left */
+    }
+}
+
+.about-us-section .text-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px; /* Added margin for spacing */
+    position: relative; /* Ensure positioning context */
+}
+
+.about-us-section .text-container h2::after {
+    content: ""; /* Create pseudo-element */
+    display: block; /* Ensure it's a block element */
+    width: 130px; /* Width of the line */
+    height: 2px; /* Height of the line */
+    background-color: orange; /* Orange color for the line */
+    position: absolute; /* Position it absolutely */
+    bottom: -10px; /* Position it just below the h2 */
+    left: 0; /* Align it to the left */
+}
